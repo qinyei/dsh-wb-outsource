@@ -1,0 +1,30 @@
+{
+  "name": "dsh-wb-outsource",
+  "version": "0.3.0",
+  "description": "输入框边上的「外包模式」按会话开关（纯内存、重启归零）：开启后该会话尽量把耗 token 的重活交给本机 WorkBuddy CLI（花 WorkBuddy 积分，不烧 DSH token）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "tools",
+    "docs",
+    "skills",
+    "install.mjs",
+    "verify-offline.mjs",
+    "verify-persession.mjs",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "cordis": "*"
+  }
+}

@@ -1,0 +1,23 @@
+dsh-wb-outsource · 🥚 外包模式  (v0.3.0 · 按会话开关)
+=========================================
+
+它能干嘛：把 DSH 里耗 token 的重活（大段编码/写文档/搬砖重构），
+          甩给本机 WorkBuddy 去干 —— 花 WorkBuddy 积分，不烧 DSH 的 token。
+
+装之前必须先有（缺一个都白装）：
+  1) WorkBuddy 桌面端                 https://www.workbuddy.cn/
+  2) 官方 CLI（注意：桌面端自带的那个是 headless 版，登不了）：
+         npm install -g @tencent-ai/codebuddy-code
+  3) 登录 CLI（只做一次）：终端敲 codebuddy
+         用方向键选 "Log in via Chinese Site" → 回车 → 浏览器里授权
+  4) Node.js（跑安装脚本用）
+
+怎么装（3 步）：
+  1) 把 dsh-wb-outsource 这个目录放到任意位置
+  2) 完全关掉 DSH（不是刷新，是退出）
+  3) 进入该目录，执行：  node install.mjs --apply
+  4) 重新打开 DSH → 输入框右侧会出现 🥚 外包 按钮，底部多一行 外包N次·X积分
+
+先体检再装（可选）：  node install.mjs --check
+
+详细说明看 README.md（含手动安装 / 验证 / 卸载 / 常见问题 / 安全说明）。
